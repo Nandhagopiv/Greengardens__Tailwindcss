@@ -11,14 +11,22 @@
 
 </head>
 <body>
+    <sidenav id="sidenav" style="height: 100%; z-index: 20;" class="sm:hidden fixed transition-all duration-1000 shadow-2xl bg-green-100 -right-64 p-10 pt-14 w-2/5 text-center">
+        <img id="xclose" class="h-3 absolute right-4 top-6" src="./Images/close.png" alt="">
+        <ul class="text-black-600 flex flex-col gap-10">
+            <li><a href="index.html" class="hover:underline hover:text-black">Home</a></li>
+            <li><a href="product.html" class="hover:underline hover:text-black">Products</a></li>
+            <li><a href="contact.html" class="hover:underline hover:text-black">Contacts</a></li>
+        </ul>
+    </sidenav>
     <nav class="bg-green-100 p-3 flex justify-between items-center shadow-xl sticky top-0 z-10">
-        <h1 class="text-2xl font-bold">Green & Garden</h1>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        <h1 class="text-2xl font-bold">Green'sGarden</h1>
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
             class="w-6 h-6 sm:hidden">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
 
-        <ul class="flex gap-10 text-gray-600 hidden sm:flex">
+        <ul class=" gap-10 text-gray-600 hidden sm:flex">
             <li><a href="index.html" class="hover:underline hover:text-black">Home</a></li>
             <li><a href="product.html" class="hover:underline hover:text-black">Products</a></li>
             <li><a href="contact.html" class="hover:underline hover:text-black">Contacts</a></li>
@@ -28,97 +36,97 @@
     <section>
         <div class="flex flex-col items-center gap-5">
             <h1 class="mt-10 text-4xl font-bold">Our Products</h1>
-            <input placeholder="Search for a product..." style="width: 60%;" class="border border-black p-2" type="email">
+            <input id="search" placeholder="Search for a product..." style="width: 60%;" class="border border-black p-2" type="email">
             <button class="bg-black p-2 text-white">Search</button>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-10">
+            <div id="product__list" class="grid grid-cols-2 md:grid-cols-4 gap-10">
                 <div>
                     <img style="width: 175px;" class="h-60 inline transform hover:-translate-y-2 hover:shadow-2xl" src="./Images/Bestseller- (1).jpg" alt="">
-                    <p class="font-medium text-xl m-2">Lactives Plant</p>
+                    <h1 class="font-medium text-xl m-2">Lactives Plant</h1>
                     <p class="text-xl font-bold mb-5">$99</p>
                 </div>
                 <div>
                     <img style="width: 175px;" class="h-60 inline transform hover:-translate-y-2 hover:shadow-2xl" src="./Images/Bestseller- (2).jpg" alt="">
-                    <p class="font-medium text-xl m-2">Green Plant</p>
+                    <h1 class="font-medium text-xl m-2">Green Plant</h1>
                     <p class="text-xl font-bold mb-5">$39</p>
                 </div>
                 <div>
                     <img style="width: 175px;" class="h-60 inline transform hover:-translate-y-2 hover:shadow-2xl" src="./Images/Bestseller- (3).jpg" alt="">
-                    <p class="font-medium text-xl m-2">Snake Plant</p>
+                    <h1 class="font-medium text-xl m-2">Snake Plant</h1>
                     <p class="text-xl font-bold mb-5">$59</p>
                 </div>
                 <div>
                     <img style="width: 175px;" class="h-60 inline transform hover:-translate-y-2 hover:shadow-2xl" src="./Images/Bestseller- (4).jpg" alt="">
-                    <p class="font-medium text-xl m-2">Spinach Plant</p>
+                    <h1 class="font-medium text-xl m-2">Spinach Plant</h1>
                     <p class="text-xl font-bold mb-5">$109</p>
                 </div>
                 <div>
                     <img style="width: 175px;" class="h-60 inline transform hover:-translate-y-2 hover:shadow-2xl" src="./Images/Bestseller- (1).jpg" alt="">
-                    <p class="font-medium text-xl m-2">Lactives Plant</p>
+                    <h1 class="font-medium text-xl m-2">Lactives Plant</h1>
                     <p class="text-xl font-bold mb-5">$99</p>
                 </div>
                 <div>
                     <img style="width: 175px;" class="h-60 inline transform hover:-translate-y-2 hover:shadow-2xl" src="./Images/Bestseller- (2).jpg" alt="">
-                    <p class="font-medium text-xl m-2">Green Plant</p>
+                    <h1 class="font-medium text-xl m-2">Green Plant</h1>
                     <p class="text-xl font-bold mb-5">$39</p>
                 </div>
                 <div>
                     <img style="width: 175px;" class="h-60 inline transform hover:-translate-y-2 hover:shadow-2xl" src="./Images/Bestseller- (3).jpg" alt="">
-                    <p class="font-medium text-xl m-2">Snake Plant</p>
+                    <h1 class="font-medium text-xl m-2">Snake Plant</h1>
                     <p class="text-xl font-bold mb-5">$59</p>
                 </div>
                 <div>
                     <img style="width: 175px;" class="h-60 inline transform hover:-translate-y-2 hover:shadow-2xl" src="./Images/Bestseller- (4).jpg" alt="">
-                    <p class="font-medium text-xl m-2">Spinach Plant</p>
+                    <h1 class="font-medium text-xl m-2">Spinach Plant</h1>
                     <p class="text-xl font-bold mb-5">$109</p>
                 </div>
                 <div>
                     <img style="width: 175px;" class="h-60 inline transform hover:-translate-y-2 hover:shadow-2xl" src="./Images/Bestseller- (1).jpg" alt="">
-                    <p class="font-medium text-xl m-2">Lactives Plant</p>
+                    <h1 class="font-medium text-xl m-2">Lactives Plant</h1>
                     <p class="text-xl font-bold mb-5">$99</p>
                 </div>
                 <div>
                     <img style="width: 175px;" class="h-60 inline transform hover:-translate-y-2 hover:shadow-2xl" src="./Images/Bestseller- (2).jpg" alt="">
-                    <p class="font-medium text-xl m-2">Green Plant</p>
+                    <h1 class="font-medium text-xl m-2">Green Plant</h1>
                     <p class="text-xl font-bold mb-5">$39</p>
                 </div>
                 <div>
                     <img style="width: 175px;" class="h-60 inline transform hover:-translate-y-2 hover:shadow-2xl" src="./Images/Bestseller- (3).jpg" alt="">
-                    <p class="font-medium text-xl m-2">Snake Plant</p>
+                    <h1 class="font-medium text-xl m-2">Snake Plant</h1>
                     <p class="text-xl font-bold mb-5">$59</p>
                 </div>
                 <div>
                     <img style="width: 175px;" class="h-60 inline transform hover:-translate-y-2 hover:shadow-2xl" src="./Images/Bestseller- (4).jpg" alt="">
-                    <p class="font-medium text-xl m-2">Spinach Plant</p>
+                    <h1 class="font-medium text-xl m-2">Spinach Plant</h1>
                     <p class="text-xl font-bold mb-5">$109</p>
                 </div>
                 <div>
                     <img style="width: 175px;" class="h-60 inline transform hover:-translate-y-2 hover:shadow-2xl" src="./Images/Bestseller- (1).jpg" alt="">
-                    <p class="font-medium text-xl m-2">Lactives Plant</p>
+                    <h1 class="font-medium text-xl m-2">Lactives Plant</h1>
                     <p class="text-xl font-bold mb-5">$99</p>
                 </div>
                 <div>
                     <img style="width: 175px;" class="h-60 inline transform hover:-translate-y-2 hover:shadow-2xl" src="./Images/Bestseller- (2).jpg" alt="">
-                    <p class="font-medium text-xl m-2">Green Plant</p>
+                    <h1 class="font-medium text-xl m-2">Green Plant</h1>
                     <p class="text-xl font-bold mb-5">$39</p>
                 </div>
                 <div>
                     <img style="width: 175px;" class="h-60 inline transform hover:-translate-y-2 hover:shadow-2xl" src="./Images/Bestseller- (3).jpg" alt="">
-                    <p class="font-medium text-xl m-2">Snake Plant</p>
+                    <h1 class="font-medium text-xl m-2">Snake Plant</h1>
                     <p class="text-xl font-bold mb-5">$59</p>
                 </div>
                 <div>
                     <img style="width: 175px;" class="h-60 inline transform hover:-translate-y-2 hover:shadow-2xl" src="./Images/Bestseller- (4).jpg" alt="">
-                    <p class="font-medium text-xl m-2">Spinach Plant</p>
+                    <h1 class="font-medium text-xl m-2">Spinach Plant</h1>
                     <p class="text-xl font-bold mb-5">$109</p>
                 </div>
                 <div>
                     <img style="width: 175px;" class="h-60 inline transform hover:-translate-y-2 hover:shadow-2xl" src="./Images/Bestseller- (1).jpg" alt="">
-                    <p class="font-medium text-xl m-2">Lactives Plant</p>
+                    <h1 class="font-medium text-xl m-2">Lactives Plant</h1>
                     <p class="text-xl font-bold mb-5">$99</p>
                 </div>
                 <div>
                     <img style="width: 175px;" class="h-60 inline transform hover:-translate-y-2 hover:shadow-2xl" src="./Images/Bestseller- (2).jpg" alt="">
-                    <p class="font-medium text-xl m-2">Green Plant</p>
+                    <h1 class="font-medium text-xl m-2">Green Plant</h1>
                     <p class="text-xl font-bold mb-5">$39</p>
                 </div>
             </div>
@@ -133,6 +141,6 @@
         <p class="mb-5">The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</p>
         <p>@2024 Greenandgarden.com</p>  
     </footer>
-    
+    <script src="product.js"></script>
 </body>
 </html>
